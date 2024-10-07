@@ -3,6 +3,24 @@
        --background-color-light: #f7f7f7;
        --background-color__dark-gray: #000000e6;
 }
+.bg-outline-gray{
+       outline: #686a6b 2px solid;
+       transition: all .2s ease-out;
+       cursor: pointer;
+}
+.bg-outline-gray:hover{
+       outline: rgb(33,37,41) 2px solid;
+       background-color: rgb(33,37,41 ) !important;
+}
+.box-scaling-mun:hover{
+       transform: skew(5deg) translateY(-50px) !important;
+       position: relative;
+       z-index: 999;
+}
+a{
+       color: white;
+}
+
 
 /* fa */
 @font-face {
@@ -410,7 +428,10 @@ body {
 
        
 }
-
+/*skills*/
+/*.eduContainer__content{*/
+/*       display: flex;*/
+/*}*/
 /* Large Mobiles */
 @media only screen and (max-width:426px) {
 

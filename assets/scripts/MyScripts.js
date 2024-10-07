@@ -7,6 +7,7 @@ $(document).ready(() => {
     setTimeout(() => {
         $(".scroll-help-box").fadeIn(500)
     }, 1000)
+
     //scroll smoothing
     if (window.scrollY > 500) {
         $(".scroll-help-box").fadeOut(300)
@@ -68,6 +69,7 @@ $(document).ready(() => {
         $(".indicatorScrolling").css("height", scrolled + "%");
 
     });
+
     //responsive page
     if (window.innerWidth < 769) {
         $(".sideMenu .button-container").css({"width": window.innerWidth});
@@ -200,7 +202,9 @@ $(document).ready(() => {
         $(".profileSection").click()
     })
 
-    //GSAP
+
+
+    //GSAP Codes
     //animate up for all selectors
     const countAnimateUp = document.querySelectorAll(".animateUp");
     for (let i = 0; i < countAnimateUp.length; i++) {

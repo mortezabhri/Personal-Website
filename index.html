@@ -71,25 +71,26 @@
                 <h6 class = "f-morabba">من</h6>
             </div>
         </button>
-        <button class = "button" id = "Edu">
-            <div class = "">
-                <h6 class = "f-morabba">تحصیلات</h6>
-            </div>
-        </button>
-        <button class = "button" id = "exp">
-            <div class = "">
-                <h6 class = "f-morabba">تجربیات</h6>
-            </div>
-        </button>
-        <button class = "button" id = "skills">
+        <button class = "button" id = "skills" onclick = "scrollToViewMun('#skillsContainer')">
             <div class = "">
                 <h6 class = "f-morabba">مهارت</h6>
                 <h6 class = "f-morabba">ها</h6>
             </div>
         </button>
+        <button class = "button" id = "exp" onclick = "scrollToViewMun('#expContainer')">
+            <div class = "">
+                <h6 class = "f-morabba">تجربیات</h6>
+            </div>
+        </button>
         <button class = "button" id = "honors">
             <div class = "">
                 <h6 class = "f-morabba">افتخارات</h6>
+            </div>
+        </button>
+        <button class = "button" id = "contacts">
+            <div class = "">
+                <h6 class = "f-morabba">ارتباط</h6>
+                <h6 class = "f-morabba"> با من</h6>
             </div>
         </button>
     </div>
@@ -99,56 +100,114 @@
 <!-- smooth content -->
 <section class = "smooth-content">
     <article class = "w-75 m-auto text-white" style = "text-align: justify;">
-        <div id = "eduContainer" class = "mbMun">
-            <div class = "bg-dark f-morabba mb-3 p-3 text-center rounded-3 fs-4 animateUp">
+        <div id = "skillsContainer" class = "mbMun">
+            <div class = "bg-outline-gray f-morabba mb-3 p-3 text-center rounded-3 fs-4 animateUp">
                 مهارت های من
             </div>
-            <div class = "eduContainer__content">
+            <div class = "eduContainer__content row g-2">
+                <div class = "col-12 col-md-6 p-3">
+                    <div class = "mt-4 d-block p-4 f-iranSans animateUp bg-outline-gray rounded rounded-3 box-scaling-mun" dir = "rtl">
+                        <div class = "text-center mb-5">تسلط به زبان سمت سرور php</div>
+                        <div class = "d-flex justify-content-center">
+                            <div class = "btn btn-outline-success col-12 col-md-8">حرفه ای</div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-12 col-md-6 p-3">
+                    <div class = "mt-4 d-block p-4 f-iranSans animateUp bg-outline-gray rounded rounded-3 box-scaling-mun" dir = "rtl">
+                        <div class = "text-center mb-5">تسلط به زبان سمت سرور php</div>
+                        <div class = "d-flex justify-content-center">
+                            <div class = "btn btn-outline-success col-12 col-md-8">حرفه ای</div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-12 col-md-6 p-3">
+                    <div class = "mt-4 d-block p-4 f-iranSans animateUp bg-outline-gray rounded rounded-3 box-scaling-mun" dir = "rtl">
+                        <div class = "text-center mb-5">تسلط به زبان سمت سرور php</div>
+                        <div class = "d-flex justify-content-center">
+                            <div class = "btn btn-outline-success col-12 col-md-8">حرفه ای</div>
+                        </div>
+                    </div>
+                </div>
+                <!--
                 <div class = "d-block d-md-flex justify-content-around p-5 f-iranSans animateUp" dir = "rtl">
                     <div class = "col-12 col-md-10 mb-md-0 mb-4 text-center text-md-center">تسلط به زبان سمت سرور php</div>
-                    <button class = "btn btn-success col-12 col-md-2">حرفه ای</button>
+                    <button class = "btn btn-outline-success col-12 col-md-2">حرفه ای</button>
                 </div>
-                <hr style = "width: 74%;background-color: #fff; margin: auto auto" class="animateUp">
+                <hr style = "width: 74%;border-color: #ffffff45; margin: auto auto;" class="animateUp">
                 
                 <div class = "d-block d-md-flex justify-content-around p-5 f-iranSans animateUp" dir = "rtl">
                     <div class = "col-12 col-md-10 mb-md-0 mb-4 text-center text-md-center">تسلط به زبان های اسکلت سایت HTML,CSS</div>
-                    <button class = "btn btn-success col-12 col-md-2">حرفه ای</button>
+                    <button class = "btn btn-outline-success col-12 col-md-2">حرفه ای</button>
                 </div>
-                <hr style = "width: 74%;background-color: #fff; margin: auto auto" class="animateUp">
+                <hr style = "width: 74%;border-color: #ffffff45; margin: auto auto" class="animateUp">
                 
                 <div class = "d-block d-md-flex justify-content-around p-5 f-iranSans animateUp" dir = "rtl">
                     <div class = "col-12 col-md-10 mb-md-0 mb-4 text-center text-md-center">تسلط به زبان سمت کلاینت JavaScript</div>
-                    <button class = "btn btn-info col-12 col-md-2">پیشرفته</button>
+                    <button class = "btn btn-outline-info col-12 col-md-2">پیشرفته</button>
                 </div>
-                <hr style = "width: 74%;background-color: #fff; margin: auto auto" class="animateUp">
+                <hr style = "width: 74%;border-color: #ffffff45; margin: auto auto" class="animateUp">
                 
                 <div class = "d-block d-md-flex justify-content-around p-5 f-iranSans animateUp" dir = "rtl">
                     <div class = "col-12 col-md-10 mb-md-0 mb-4 text-center text-md-center">تسلط به کتابخانه jQuery</div>
-                    <button class = "btn btn-success col-12 col-md-2">حرفه ای</button>
+                    <button class = "btn btn-outline-success col-12 col-md-2">حرفه ای</button>
                 </div>
-                <hr style = "width: 74%;background-color: #fff; margin: auto auto" class="animateUp">
+                <hr style = "width: 74%;border-color: #ffffff45; margin: auto auto" class="animateUp">
                 
                 <div class = "d-block d-md-flex justify-content-around p-5 f-iranSans animateUp" dir = "rtl">
                     <div class = "col-12 col-md-10 mb-md-0 mb-4 text-center text-md-center">تسلط به کتابخانه Bootstrap</div>
-                    <button class = "btn btn-success col-12 col-md-2">حرفه ای</button>
+                    <button class = "btn btn-outline-success col-12 col-md-2">حرفه ای</button>
                 </div>
-                <hr style = "width: 74%;background-color: #fff; margin: auto auto" class="animateUp">
+                <hr style = "width: 74%;border-color: #ffffff45; margin: auto auto" class="animateUp">
                 
                 <div class = "d-block d-md-flex justify-content-around p-5 f-iranSans animateUp" dir = "rtl">
                     <div class = "col-12 col-md-10 mb-md-0 mb-4 text-center text-md-center">تسلط به کتابخانه نوظهور GSAP</div>
-                    <button class = "btn btn-warning col-12 col-md-2">متوسط</button>
+                    <button class = "btn btn-outline-warning col-12 col-md-2">متوسط</button>
                 </div>
-                <hr style = "width: 74%;background-color: #fff; margin: auto auto" class="animateUp">
+                <hr style = "width: 74%;border-color: #ffffff45; margin: auto auto" class="animateUp">
                 
                 <div class = "d-block d-md-flex justify-content-around p-5 f-iranSans animateUp" dir = "rtl">
                     <div class = "col-12 col-md-10 mb-md-0 mb-4 text-center text-md-center">تسلط به زبان دیتابیسیک MySQL</div>
-                    <button class = "btn btn-success col-12 col-md-2">حرفه ای</button>
+                    <button class = "btn btn-outline-success col-12 col-md-2">حرفه ای</button>
                 </div>
-                <hr style = "width: 74%;background-color: #fff; margin: auto auto" class="animateUp">
+                <hr style = "width: 74%;border-color: #ffffff45; margin: auto auto" class="animateUp">
                 
                 <div class = "d-block d-md-flex justify-content-around p-5 f-iranSans animateUp" dir = "rtl">
                     <div class = "col-12 col-md-10 mb-md-0 mb-4 text-center text-md-center">تسلط به سیستم کنترل ورژن Git</div>
-                    <button class = "btn btn-success col-12 col-md-2">حرفه ای</button>
+                    <button class = "btn btn-outline-success col-12 col-md-2">حرفه ای</button>
+                </div>
+                -->
+            </div>
+        </div>
+        <div id = "expContainer" class = "mbMun">
+            <div class = "bg-outline-gray f-morabba mb-3 p-3 text-center rounded-3 fs-4 animateUp">
+                تجربه من ، نمونه کارها
+            </div>
+            <div class = "expContainer__content">
+                <!--Card-->
+                <div class = "mt-4 d-block d-md-flex p-4 f-iranSans animateUp bg-outline-gray rounded rounded-3 box-scaling-mun" dir = "ltr">
+                    <div class = "col-12 col-md-4 mb-4 mb-md-0">
+                        <img src = "assets/images/bookino.jpg" class = "rounded w-100" alt = "#">
+                    </div>
+                    <div class = "col-12 col-md-8 d-flex justify-content-center flex-column gap-3 p-2 text-center text-md-end" dir = "rtl">
+                        <h4> فروشگاه آنلاین کتاب بوکینو </h4>
+                        <h6> طراحی صفر تا صد و کاملا انعطاف پذیر، برگزیده مقام کشوری مسابقات طراحی وب </h6>
+                        <p>
+                            <a href = "#" style = "font-size: 14px">اطلاعات بیشتر و مشاهده</a>
+                        </p>
+                    </div>
+                </div>
+                <div class = "mt-4 d-block d-md-flex p-4 f-iranSans animateUp bg-outline-gray rounded rounded-3 box-scaling-mun" dir = "ltr">
+                    <div class = "col-12 col-md-4 mb-4 mb-md-0">
+                        <img src = "assets/images/me.jpg" class = "rounded w-100" alt = "#">
+                    </div>
+                    <div class = "col-12 col-md-8 d-flex justify-content-center flex-column gap-3 p-2 text-center text-md-end" dir = "rtl">
+                        <h4> سایت شخصی و رزومه (ورژن 1) مرتضی بحری </h4>
+                        <h6> طراحی صفر تا صد و کاملا انعطاف پذیر با لوگوی اختصاصی و بهینه شده برای موتور های جستجو </h6>
+                        <p>
+                            <a href = "#" style = "font-size: 14px">اطلاعات بیشتر و مشاهده</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -162,6 +221,11 @@
 <script src = "assets/Gsap/gsap.min.js"></script>
 <script src = "assets/Gsap/gsapScrollTrigger.js"></script>
 <script src = "assets/scripts/MyScripts.js"></script>
+<script>
+        function scrollToViewMun(elm) {
+            $(window).scrollTop($(elm).offset().top - 150)
+        }
+</script>
 </body>
 
 </html>
