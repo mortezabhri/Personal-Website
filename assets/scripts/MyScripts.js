@@ -185,7 +185,7 @@ $(document).ready(() => {
                     "height": "100px",
                     "border-radius": "100px",
                     "top": "10px",
-                    "right": "10px"
+                    "right": "-100px"
                 })
                 $(".imageContainer").css({
                     "transform": "scale(1)"
