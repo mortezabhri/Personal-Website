@@ -1,0 +1,250 @@
+/*LOADER*/
+@keyframes drop {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(80px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.lava-lamp {
+    position: relative;
+    width: 50px;
+    height: 100px;
+    background: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to bottom, #e64980, #ff8787);
+    border-radius: 50%;
+    left: 15px;
+    animation: drop 5s ease-in-out infinite;
+}
+
+.bubble1 {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to bottom, #82c91e, #3bc9db);
+    border-radius: 50%;
+    left: 1px;
+    animation: drop 3s ease-in-out infinite;
+}
+
+.bubble2 {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to bottom, #7950f2, #f783ac);
+    border-radius: 50%;
+    left: 30px;
+    animation: drop 4s ease-in-out infinite;
+}
+
+.bubble3 {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to bottom, #4481eb, #04befe);
+    border-radius: 50%;
+    left: 20px;
+    animation: drop 6s ease-in-out infinite;
+}
+
+/* MAIN */
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+
+/* smooth content */
+.smooth-content {
+    position: fixed;
+    top: 0;
+    transition: all .8s cubic-bezier(0, 0.04, 0.35, 0.96);
+    width: 100%;
+
+}
+
+/* side Menu */
+
+.sideMenu .button-container {
+    display: flex;
+    /*width: 350px;*/
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 12px 15px, rgb(255 255 255 / 15%) 2px 12px 16px;
+    transition: all 0.5s ease;
+    transform: rotate(90deg) translateY(210px);
+    position: absolute;
+}
+
+.sideMenu .button-container:hover {
+    width: 400px;
+    transition: all 0.5s;
+}
+
+.sideMenu .button {
+    outline: 0 !important;
+    border: 0 !important;
+    /* width: 100px;
+    height: 40px; */
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    margin: 0 -60px;
+    padding: 0;
+}
+
+.sideMenu .button:hover {
+    transform: scale(1.4) rotate(-90deg);
+}
+
+.sideMenu .icon {
+    font-size: 20px;
+}
+
+.sideMenu {
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100px;
+    height: 100vh;
+}
+
+.sideMenu button {
+    transform: rotate(-90deg);
+}
+
+.sideMenu button svg {
+    transform: scale(1.5);
+}
+
+/* profile */
+.bg-filter {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    z-index: 901;
+}
+
+.profileSection {
+    transform: translateX(150px);
+}
+
+.profileSection .imageContainer {
+    display: grid;
+    place-content: center;
+    transition: all .5s ease;
+}
+
+.profileSection img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+
+}
+
+.profileSection .contentContainer {
+    transition: all .5s ease;
+    transform: translateY(50px);
+    padding: 18px;
+}
+
+
+
+/* MEDIA QUERIES */
+/* Tablet */
+@media only screen and (max-width: 769px) {
+    .welcome-box {
+        padding: 3rem 18px !important;
+        width: 75% !important;
+    }
+
+    .sideMenu .button-container {
+        bottom: 0;
+        transform: translateX(50%) translateY(100px);
+        /*width: 400px;*/
+    }
+
+    .sideMenu .button-container:hover {
+        height: 90px;
+        width: 99vw;
+    }
+
+    .sideMenu .button:hover {
+        transform: scale(1.4);
+    }
+    .sideMenu button {
+        transform: rotate(0deg);
+        height: 70px;
+    }
+
+    /*.sideMenu .button-container .button:hover {*/
+    /*    transform: scale(1.5);*/
+    /*}*/
+
+
+}
+
+/*skills*/
+/*.eduContainer__content{*/
+/*       display: flex;*/
+/*}*/
+/* Large Mobiles */
+@media only screen and (max-width: 426px) {
+
+    .welcome-box {
+        padding: 2rem 10px !important;
+    }
+
+
+}
+
+/* Smile Mobiles */
+@media only screen and (max-width: 321px) {
+    .welcome-box {
+        padding: 2rem 10px !important;
+    }
+}
+
+/* Medium Mobiles */
+@media only screen and (max-width: 580px) {
+    .welcome-box h5:nth-child(1) {
+        transform: translate(90px, -30px);
+    }
+
+    .welcome-box h5:nth-child(2) {
+        transform: translate(0);
+    }
+
+    .welcome-box h5:nth-child(3) {
+        transform: translate(-90px, 30px);
+    }
+}

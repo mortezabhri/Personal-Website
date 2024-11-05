@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رزومه من ( بتا)</title>
+    <link rel="stylesheet" href="assets/styles/MyStyles.css">
+    <link rel="stylesheet" href="assets/tailwindcss/main.css">
+
+</head>
+
+<body class="bg-bgColor relative top-0">
+<!-- LOADER -->
+<section id="loaderSec"
+         class="w-screen h-screen flex justify-center items-center z-100 fixed bg-[#00000073] backdrop-blur-[8px]">
+    <div class="lava-lamp">
+        <div class="bubble"></div>
+        <div class="bubble1"></div>
+        <div class="bubble2"></div>
+        <div class="bubble3"></div>
+    </div>
+</section>
+
+
+<!-- Indicator -->
+<section id="indicator"
+         class="duration-700 translate-x-10 fixed top-0 right-0 bg-white w-1.5 h-screen rounded-xl transition-all">
+    <div class="w-1.5 transition-all duration-75 bg-bgColor"></div>
+</section>
+
+<!-- WELCOME -->
+<section class="w-full h-screen flex justify-center items-center relative top-0">
+    <div id="welcome" class="fixed flex font-morabba p-5" dir="rtl">
+        <h5 class="opacity-0 text-white text-center text-lg -translate-y-24 transition-all duration-[50ms] translate-x-3 sm:text-2xl sm:translate-x-12  t1">
+            به وبسایت شخصی </h5>
+        <h5 class="opacity-0 text-white text-center text-[20px] sm:text-4xl transition-all duration-[50ms] t2">مرتضی
+            بحری </h5>
+        <h5 class="opacity-0 text-white text-center text-lg translate-y-24 transition-all duration-[50ms] -translate-x-3 sm:text-2xl sm:-translate-x-12 t3">
+            خوش آمدید</h5>
+    </div>
+    <div id="scroll-help"
+         class="opacity-0 flex fixed left-0 bottom-0 m-4 text-white gap-y-4 justify-center items-center flex-col z-[99] w-[70px] h-[140px] bg-[#212529] rounded-full">
+        <p class="text-center font-morabba">اسکرول کنید</p>
+        <svg class="animate-scrolling" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-9 0 32 32">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none">
+                <g transform="translate(-213.000000, -1193.000000)" fill="#fff">
+                    <path d="M225,1217 L222,1217 L222,1201 L225,1201 C225.643,1201 226.293,1201.02 226.687,1200.62 C227.08,1200.23 227.08,1199.6 226.687,1199.2 L220.747,1193.28 C220.537,1193.07 220.259,1192.98 219.984,1193 C219.71,1192.98 219.432,1193.07 219.222,1193.28 L213.283,1199.2 C212.89,1199.6 212.89,1200.23 213.283,1200.62 C213.676,1201.02 214.294,1201 215,1201 L218,1201 L218,1217 L215,1217 C214.357,1217 213.676,1216.98 213.283,1217.38 C212.89,1217.77 212.89,1218.4 213.283,1218.8 L219.222,1224.72 C219.432,1224.93 219.71,1225.02 219.984,1225 C220.259,1225.02 220.537,1224.93 220.747,1224.72 L226.687,1218.8 C227.08,1218.4 227.08,1217.77 226.687,1217.38 C226.293,1216.98 225.737,1217 225,1217">
+
+                    </path>
+                </g>
+            </g>
+        </svg>
+    </div>
+</section>
+
+<!-- Profile -->
+<section class="bg-filter hidden z-[97]"></section>
+<section
+        class="profileSection fixed top-3 -right-24 w-24 h-24 rounded-[100px] transition-all duration-500 z-[98] bg-[#212121] ">
+    <div class="imageContainer">
+        <img src="assets/images/mbCompresses.jpg" alt="">
+    </div>
+    <div class="contentContainer mt-3" style="display: none;opacity: 0;">
+        <h3 class="text-white mb-3">Lorem, ipsum dolor.</h3>
+        <h6 class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tenetur magnam at.</h6>
+    </div>
+</section>
+
+<!-- Menu -->
+<section class="sideMenu">
+    <div class="button-container font-morabba w-[99vw] md:w-[350px] bg-[#33333363] backdrop-blur-[18px]">
+        <button class="button" id="bio">
+            <div class="p-0 pt-md-3">
+                <h6 class="f-morabba">درباره</h6>
+                <h6 class="f-morabba">من</h6>
+            </div>
+        </button>
+        <button class="button" id="skills" onclick="scrollToViewMun('#skillsContainer')">
+            <div class="">
+                <h6 class="f-morabba">مهارت</h6>
+                <h6 class="f-morabba">ها</h6>
+            </div>
+        </button>
+        <button class="button" id="exp" onclick="scrollToViewMun('#expContainer')">
+            <div class="">
+                <h6 class="f-morabba">تجربیات</h6>
+            </div>
+        </button>
+        <button class="button" id="honors" onclick="scrollToViewMun('#honorContainer')">
+            <div class="">
+                <h6 class="f-morabba">افتخارات</h6>
+            </div>
+        </button>
+        <button class="button" id="contacts">
+            <div class="">
+                <h6 class="f-morabba">ارتباط</h6>
+                <h6 class="f-morabba"> با من</h6>
+            </div>
+        </button>
+    </div>
+</section>
+
+<!-- smooth content -->
+<section class="smooth-content">
+    <article class="w-11/12 max-w-[1440px] md:w-9/12 lg:w-8/12 mt-[70rem] mx-auto space-y-36">
+        <div id="skillsContainer" class="text-white">
+            <div class="animateUp md:text-2xl mb-12 py-5 text-center border border-[#aaa] shadow-none text-white hover:!scale-[1.01] hover:text-white hover:shadow-[6px_6px_0px_-2px_#fff] hover:border-[#4b5563] font-morabba ">
+                مهارت های من
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="animateUp w-full py-4 hover:!scale-[1.01] hover:border-opacity-0 hover:shadow-[2px_2px_12px_-2px_#fff] border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden flex justify-center items-center">
+                    <div class="mt-4 p-2" dir="rtl">
+                        <div class="text-center mb-5">تسلط به زبان سمت سرور php</div>
+                    </div>
+                    <div class="absolute top-0 left-0 w-[170px] -rotate-[35deg] translate-x-[-72px] translate-y-[-4px] h-12 bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mt-[47px]" viewBox="0 0 1440 320">
+                            <path fill="#fff" fill-opacity="1"
+                                  d="M0,0L26.7,53.3C53.3,107,107,213,160,245.3C213.3,277,267,235,320,192C373.3,149,427,107,480,90.7C533.3,75,587,85,640,101.3C693.3,117,747,139,800,122.7C853.3,107,907,53,960,26.7C1013.3,0,1067,0,1120,5.3C1173.3,11,1227,21,1280,37.3C1333.3,53,1387,75,1413,85.3L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
+                        </svg>
+                    </div>
+                    <span class="absolute top-2 -left-1 text-red-700 rotate-[-35deg] ">حرفه ای</span>
+                </div>
+                <div class="animateUp w-full py-4 hover:!scale-[1.01] hover:border-opacity-0 hover:shadow-[2px_2px_12px_-2px_#fff] border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden flex justify-center items-center">
+                    <div class="mt-4 p-2" dir="rtl">
+                        <div class="text-center mb-5">تسلط به زبان سمت سرور php</div>
+                    </div>
+                    <div class="absolute top-0 left-0 w-[170px] -rotate-[35deg] translate-x-[-72px] translate-y-[-4px] h-12 bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mt-[47px]" viewBox="0 0 1440 320">
+                            <path fill="#fff" fill-opacity="1"
+                                  d="M0,0L26.7,53.3C53.3,107,107,213,160,245.3C213.3,277,267,235,320,192C373.3,149,427,107,480,90.7C533.3,75,587,85,640,101.3C693.3,117,747,139,800,122.7C853.3,107,907,53,960,26.7C1013.3,0,1067,0,1120,5.3C1173.3,11,1227,21,1280,37.3C1333.3,53,1387,75,1413,85.3L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
+                        </svg>
+                    </div>
+                    <span class="absolute top-2 -left-1 text-red-700 rotate-[-35deg] ">حرفه ای</span>
+                </div>
+                <div class="animateUp w-full py-4 hover:!scale-[1.01] hover:border-opacity-0 hover:shadow-[2px_2px_12px_-2px_#fff] border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden flex justify-center items-center">
+                    <div class="mt-4 p-2" dir="rtl">
+                        <div class="text-center mb-5">تسلط به زبان سمت سرور php</div>
+                    </div>
+                    <div class="absolute top-0 left-0 w-[170px] -rotate-[35deg] translate-x-[-72px] translate-y-[-4px] h-12 bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mt-[47px]" viewBox="0 0 1440 320">
+                            <path fill="#fff" fill-opacity="1"
+                                  d="M0,0L26.7,53.3C53.3,107,107,213,160,245.3C213.3,277,267,235,320,192C373.3,149,427,107,480,90.7C533.3,75,587,85,640,101.3C693.3,117,747,139,800,122.7C853.3,107,907,53,960,26.7C1013.3,0,1067,0,1120,5.3C1173.3,11,1227,21,1280,37.3C1333.3,53,1387,75,1413,85.3L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
+                        </svg>
+                    </div>
+                    <span class="absolute top-2 -left-1 text-red-700 rotate-[-35deg] ">حرفه ای</span>
+                </div>
+            </div>
+        </div>
+        <div id="expContainer" class="text-white">
+            <div class="animateUp md:text-2xl mb-12 py-5 text-center border border-[#aaa] shadow-none text-white hover:text-white hover:!scale-[1.01] hover:shadow-[6px_6px_0px_-2px_#fff] hover:border-[#4b5563] font-morabba ">
+                تجربیات و نمونه کارها
+            </div>
+            <div class="grid grid-cols-1 gap-y-10">
+                <div class="animateUp w-full p-8 hover:!scale-[1.01] hover:border-opacity-0 hover:shadow-[2px_2px_12px_-2px_#fff] border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden block md:flex justify-center items-center">
+                    <div class="w-full md:w-4/12 mb-4 md:mb-0">
+                        <img src="assets/images/bookino.jpg" class="rounded w-full" alt="#">
+                    </div>
+                    <div class="w-full md:w-8/12 flex justify-center flex-col gap-4 py-2 px-4 text-center md:text-start" dir="rtl">
+                        <h4 class="text-[1.4rem]"> فروشگاه آنلاین کتاب بوکینو </h4>
+                        <h6> طراحی صفر تا صد و کاملا انعطاف پذیر، برگزیده مقام کشوری مسابقات طراحی وب </h6>
+                        <p>
+                            <a href="#" class="text-[14px] underline">اطلاعات بیشتر و مشاهده</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="animateUp w-full p-8 hover:!scale-[1.01] hover:border-opacity-0 hover:shadow-[2px_2px_12px_-2px_#fff] border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden block md:flex justify-center items-center">
+                    <div class="w-full md:w-4/12 mb-4 md:mb-0">
+                        <img src="assets/images/bookino.jpg" class="rounded w-full" alt="#">
+                    </div>
+                    <div class="w-full md:w-8/12 flex justify-center flex-col gap-4 py-2 px-4 text-center md:text-start" dir="rtl">
+                        <h4 class="text-[1.4rem]"> فروشگاه آنلاین کتاب بوکینو </h4>
+                        <h6> طراحی صفر تا صد و کاملا انعطاف پذیر، برگزیده مقام کشوری مسابقات طراحی وب </h6>
+                        <p>
+                            <a href="#" class="text-[14px] underline">اطلاعات بیشتر و مشاهده</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="animateUp w-full p-8 hover:!scale-[1.01] hover:border-opacity-0 hover:shadow-[2px_2px_12px_-2px_#fff] border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden block md:flex justify-center items-center">
+                    <div class="w-full md:w-4/12 mb-4 md:mb-0">
+                        <img src="assets/images/bookino.jpg" class="rounded w-full" alt="#">
+                    </div>
+                    <div class="w-full md:w-8/12 flex justify-center flex-col gap-4 py-2 px-4 text-center md:text-start" dir="rtl">
+                        <h4 class="text-[1.4rem]"> فروشگاه آنلاین کتاب بوکینو </h4>
+                        <h6> طراحی صفر تا صد و کاملا انعطاف پذیر، برگزیده مقام کشوری مسابقات طراحی وب </h6>
+                        <p>
+                            <a href="#" class="text-[14px] underline">اطلاعات بیشتر و مشاهده</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="honorContainer" class="">
+            <div class="bg-outline-gray f-morabba mb-3 p-3 text-center rounded-3 fs-4 animateUp">
+                افتخارات
+            </div>
+            <div class="eduContainer__content row g-2">
+                <div class="col-12 col-md-6 p-3">
+                    <div class="mt-4 d-block p-4 f-iranSans animateUp bg-outline-gray rounded rounded-3 box-scaling-mun"
+                         dir="rtl">
+                        <div class="text-center mb-5">تسلط به زبان سمت سرور php</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+
+
+<!-- scripts -->
+<script src="assets/jquery/jquery-3.7.1.min.js"></script>
+<script src="assets/Gsap/gsap.min.js"></script>
+<script src="assets/Gsap/gsapScrollTrigger.js"></script>
+<script src="assets/scripts/MyScripts.js"></script>
+<script>
+    function scrollToViewMun(elm) {
+        $(window).scrollTop($(elm).offset().top - 150)
+    }
+</script>
+</body>
+
+</html>
