@@ -81,11 +81,21 @@ html {
 
 }
 
+.hoverBoxesShadow:hover{
+    scale: 1.01 !important;
+    --tw-border-opacity: 0;
+    box-shadow: 2px 2px 12px -2px #fff;
+}
+.hoverBoxesTranslate:hover{
+    scale: 1.01 !important;
+    box-shadow: 6px 6px 0 -2px #fff;
+    border-color: #4b5563;
+}
 /* side Menu */
 
 .sideMenu .button-container {
     display: flex;
-    /*width: 350px;*/
+    width: 350px;
     height: 70px;
     align-items: center;
     justify-content: space-around;
@@ -127,7 +137,7 @@ html {
 }
 
 .sideMenu {
-    z-index: 900;
+    z-index: 90;
     display: flex;
     align-items: center;
     position: fixed;
@@ -181,7 +191,7 @@ html {
 
 /* MEDIA QUERIES */
 /* Tablet */
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 767px) {
     .welcome-box {
         padding: 3rem 18px !important;
         width: 75% !important;
@@ -190,7 +200,7 @@ html {
     .sideMenu .button-container {
         bottom: 0;
         transform: translateX(50%) translateY(100px);
-        /*width: 400px;*/
+        width: 99vw;
     }
 
     .sideMenu .button-container:hover {

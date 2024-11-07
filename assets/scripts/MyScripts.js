@@ -149,7 +149,7 @@ $(document).ready(() => {
 
 
         //menu side
-        if (window.innerWidth > 769) {
+        if (window.innerWidth > 767) {
             if (window.scrollY > scrollShowButtons) {
                 $(".button-container").css("transform", "rotate(90deg) translateY(120px)")
             } else {
@@ -194,7 +194,7 @@ $(document).ready(() => {
         }
 
         //menu side
-        if (window.innerWidth > 769) {
+        if (window.innerWidth > 767) {
             if (window.scrollY > scrollShowButtons) {
                 $(".button-container").css("transform", "rotate(90deg) translateY(120px)")
             } else {
@@ -232,13 +232,12 @@ $(document).ready(() => {
                     toggleActions: "play none none reverse"
                 },
                 ease: "back.in(1.7)",
-                duration: .8,
+                duration: .6,
                 scale: 1,
                 y: 0,
                 opacity: 1,
                 onReverseComplete: function () {
                     $(countAnimateUp[i]).css("transition" , "none")
-
                 },
                 onComplete: function () {
                     $(countAnimateUp[i]).css("transition" , "all 0.2s ease")

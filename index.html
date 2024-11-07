@@ -10,10 +10,10 @@
 
 </head>
 
-<body class="bg-bgColor relative top-0">
+<body class="bg-bgColor relative top-0 mb-28">
 <!-- LOADER -->
 <section id="loaderSec"
-         class="w-screen h-screen flex justify-center items-center z-100 fixed bg-[#00000073] backdrop-blur-[8px]">
+        class="w-screen h-screen flex justify-center items-center z-100 fixed bg-[#00000073] backdrop-blur-[8px]">
     <div class="lava-lamp">
         <div class="bubble"></div>
         <div class="bubble1"></div>
@@ -25,7 +25,7 @@
 
 <!-- Indicator -->
 <section id="indicator"
-         class="duration-700 translate-x-10 fixed top-0 right-0 bg-white w-1.5 h-screen rounded-xl transition-all">
+        class="duration-700 translate-x-10 fixed top-0 right-0 bg-white w-1.5 h-screen rounded-xl transition-all">
     <div class="w-1.5 transition-all duration-75 bg-bgColor"></div>
 </section>
 
@@ -40,7 +40,7 @@
             خوش آمدید</h5>
     </div>
     <div id="scroll-help"
-         class="opacity-0 flex fixed left-0 bottom-0 m-4 text-white gap-y-4 justify-center items-center flex-col z-[99] w-[70px] h-[140px] bg-[#212529] rounded-full">
+            class="opacity-0 flex fixed left-0 bottom-0 m-4 text-white gap-y-4 justify-center items-center flex-col z-[99] w-[70px] h-[140px] bg-[#212529] rounded-full">
         <p class="text-center font-morabba">اسکرول کنید</p>
         <svg class="animate-scrolling" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-9 0 32 32">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none">
@@ -68,8 +68,8 @@
 </section>
 
 <!-- Menu -->
-<section class="sideMenu">
-    <div class="button-container font-morabba w-[99vw] md:w-[350px] bg-[#33333363] backdrop-blur-[18px]">
+<section class="sideMenu w-1 md:w-[100px]">
+    <div class="button-container font-morabba w-[99vw] bg-[#33333363] backdrop-blur-[18px]">
         <button class="button" id="bio">
             <div class="p-0 pt-md-3">
                 <h6 class="f-morabba">درباره</h6>
@@ -92,7 +92,7 @@
                 <h6 class="f-morabba">افتخارات</h6>
             </div>
         </button>
-        <button class="button" id="contacts">
+        <button class="button" id="contacts" onclick="scrollToViewMun('#contactContainer')">
             <div class="">
                 <h6 class="f-morabba">ارتباط</h6>
                 <h6 class="f-morabba"> با من</h6>
@@ -103,60 +103,61 @@
 
 <!-- smooth content -->
 <section class="smooth-content">
-    <article class="w-11/12 max-w-[1440px] md:w-9/12 lg:w-8/12 mt-[70rem] mx-auto space-y-36">
+    <article class="w-11/12 max-w-[1440px] md:w-9/12 lg:w-8/12 mt-[155vh] mx-auto space-y-36">
         <div id="skillsContainer" class="text-white">
-            <div class="animateUp md:text-2xl mb-12 py-5 text-center border border-[#aaa] shadow-none text-white hover:!scale-[1.01] hover:text-white hover:shadow-[6px_6px_0px_-2px_#fff] hover:border-[#4b5563] font-morabba ">
+            <div class="animateUp text-lg md:text-2xl mb-12 py-5 text-center border border-[#aaa] shadow-none text-white hoverBoxesTranslate font-morabba ">
                 مهارت های من
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div class="animateUp w-full py-4 hover:!scale-[1.01] hover:border-opacity-0 hover:shadow-[2px_2px_12px_-2px_#fff] border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden flex justify-center items-center">
+                <div class="animateUp w-full py-4 hoverBoxesShadow border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden flex justify-center items-center">
                     <div class="mt-4 p-2" dir="rtl">
                         <div class="text-center mb-5">تسلط به زبان سمت سرور php</div>
                     </div>
                     <div class="absolute top-0 left-0 w-[170px] -rotate-[35deg] translate-x-[-72px] translate-y-[-4px] h-12 bg-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="mt-[47px]" viewBox="0 0 1440 320">
                             <path fill="#fff" fill-opacity="1"
-                                  d="M0,0L26.7,53.3C53.3,107,107,213,160,245.3C213.3,277,267,235,320,192C373.3,149,427,107,480,90.7C533.3,75,587,85,640,101.3C693.3,117,747,139,800,122.7C853.3,107,907,53,960,26.7C1013.3,0,1067,0,1120,5.3C1173.3,11,1227,21,1280,37.3C1333.3,53,1387,75,1413,85.3L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
+                                    d="M0,0L26.7,53.3C53.3,107,107,213,160,245.3C213.3,277,267,235,320,192C373.3,149,427,107,480,90.7C533.3,75,587,85,640,101.3C693.3,117,747,139,800,122.7C853.3,107,907,53,960,26.7C1013.3,0,1067,0,1120,5.3C1173.3,11,1227,21,1280,37.3C1333.3,53,1387,75,1413,85.3L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
                         </svg>
                     </div>
-                    <span class="absolute top-2 -left-1 text-red-700 rotate-[-35deg] ">حرفه ای</span>
+                    <span class="absolute font-dastNevis top-2 -left-1 text-red-700 rotate-[-35deg] ">حرفه ای</span>
                 </div>
-                <div class="animateUp w-full py-4 hover:!scale-[1.01] hover:border-opacity-0 hover:shadow-[2px_2px_12px_-2px_#fff] border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden flex justify-center items-center">
+                <div class="animateUp w-full py-4 hoverBoxesShadow border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden flex justify-center items-center">
                     <div class="mt-4 p-2" dir="rtl">
                         <div class="text-center mb-5">تسلط به زبان سمت سرور php</div>
                     </div>
                     <div class="absolute top-0 left-0 w-[170px] -rotate-[35deg] translate-x-[-72px] translate-y-[-4px] h-12 bg-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="mt-[47px]" viewBox="0 0 1440 320">
                             <path fill="#fff" fill-opacity="1"
-                                  d="M0,0L26.7,53.3C53.3,107,107,213,160,245.3C213.3,277,267,235,320,192C373.3,149,427,107,480,90.7C533.3,75,587,85,640,101.3C693.3,117,747,139,800,122.7C853.3,107,907,53,960,26.7C1013.3,0,1067,0,1120,5.3C1173.3,11,1227,21,1280,37.3C1333.3,53,1387,75,1413,85.3L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
+                                    d="M0,0L26.7,53.3C53.3,107,107,213,160,245.3C213.3,277,267,235,320,192C373.3,149,427,107,480,90.7C533.3,75,587,85,640,101.3C693.3,117,747,139,800,122.7C853.3,107,907,53,960,26.7C1013.3,0,1067,0,1120,5.3C1173.3,11,1227,21,1280,37.3C1333.3,53,1387,75,1413,85.3L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
                         </svg>
                     </div>
-                    <span class="absolute top-2 -left-1 text-red-700 rotate-[-35deg] ">حرفه ای</span>
+                    <span class="absolute font-dastNevis top-2 -left-1 text-red-700 rotate-[-35deg] ">حرفه ای</span>
                 </div>
-                <div class="animateUp w-full py-4 hover:!scale-[1.01] hover:border-opacity-0 hover:shadow-[2px_2px_12px_-2px_#fff] border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden flex justify-center items-center">
+                <div class="animateUp w-full py-4 hoverBoxesShadow border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden flex justify-center items-center">
                     <div class="mt-4 p-2" dir="rtl">
                         <div class="text-center mb-5">تسلط به زبان سمت سرور php</div>
                     </div>
                     <div class="absolute top-0 left-0 w-[170px] -rotate-[35deg] translate-x-[-72px] translate-y-[-4px] h-12 bg-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="mt-[47px]" viewBox="0 0 1440 320">
                             <path fill="#fff" fill-opacity="1"
-                                  d="M0,0L26.7,53.3C53.3,107,107,213,160,245.3C213.3,277,267,235,320,192C373.3,149,427,107,480,90.7C533.3,75,587,85,640,101.3C693.3,117,747,139,800,122.7C853.3,107,907,53,960,26.7C1013.3,0,1067,0,1120,5.3C1173.3,11,1227,21,1280,37.3C1333.3,53,1387,75,1413,85.3L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
+                                    d="M0,0L26.7,53.3C53.3,107,107,213,160,245.3C213.3,277,267,235,320,192C373.3,149,427,107,480,90.7C533.3,75,587,85,640,101.3C693.3,117,747,139,800,122.7C853.3,107,907,53,960,26.7C1013.3,0,1067,0,1120,5.3C1173.3,11,1227,21,1280,37.3C1333.3,53,1387,75,1413,85.3L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
                         </svg>
                     </div>
-                    <span class="absolute top-2 -left-1 text-red-700 rotate-[-35deg] ">حرفه ای</span>
+                    <span class="absolute font-dastNevis top-2 -left-1 text-red-700 rotate-[-35deg] ">حرفه ای</span>
                 </div>
             </div>
         </div>
         <div id="expContainer" class="text-white">
-            <div class="animateUp md:text-2xl mb-12 py-5 text-center border border-[#aaa] shadow-none text-white hover:text-white hover:!scale-[1.01] hover:shadow-[6px_6px_0px_-2px_#fff] hover:border-[#4b5563] font-morabba ">
+            <div class="animateUp text-lg md:text-2xl mb-12 py-5 text-center border border-[#aaa] shadow-none text-white hover:text-white hoverBoxesTranslate font-morabba ">
                 تجربیات و نمونه کارها
             </div>
             <div class="grid grid-cols-1 gap-y-10">
-                <div class="animateUp w-full p-8 hover:!scale-[1.01] hover:border-opacity-0 hover:shadow-[2px_2px_12px_-2px_#fff] border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden block md:flex justify-center items-center">
+                <div class="animateUp w-full p-8 hoverBoxesShadow border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden block md:flex justify-center items-center">
                     <div class="w-full md:w-4/12 mb-4 md:mb-0">
                         <img src="assets/images/bookino.jpg" class="rounded w-full" alt="#">
                     </div>
-                    <div class="w-full md:w-8/12 flex justify-center flex-col gap-4 py-2 px-4 text-center md:text-start" dir="rtl">
+                    <div class="w-full md:w-8/12 flex justify-center flex-col gap-4 py-2 px-4 text-center md:text-start"
+                            dir="rtl">
                         <h4 class="text-[1.4rem]"> فروشگاه آنلاین کتاب بوکینو </h4>
                         <h6> طراحی صفر تا صد و کاملا انعطاف پذیر، برگزیده مقام کشوری مسابقات طراحی وب </h6>
                         <p>
@@ -164,11 +165,12 @@
                         </p>
                     </div>
                 </div>
-                <div class="animateUp w-full p-8 hover:!scale-[1.01] hover:border-opacity-0 hover:shadow-[2px_2px_12px_-2px_#fff] border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden block md:flex justify-center items-center">
+                <div class="animateUp w-full p-8 hoverBoxesShadow border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden block md:flex justify-center items-center">
                     <div class="w-full md:w-4/12 mb-4 md:mb-0">
                         <img src="assets/images/bookino.jpg" class="rounded w-full" alt="#">
                     </div>
-                    <div class="w-full md:w-8/12 flex justify-center flex-col gap-4 py-2 px-4 text-center md:text-start" dir="rtl">
+                    <div class="w-full md:w-8/12 flex justify-center flex-col gap-4 py-2 px-4 text-center md:text-start"
+                            dir="rtl">
                         <h4 class="text-[1.4rem]"> فروشگاه آنلاین کتاب بوکینو </h4>
                         <h6> طراحی صفر تا صد و کاملا انعطاف پذیر، برگزیده مقام کشوری مسابقات طراحی وب </h6>
                         <p>
@@ -176,11 +178,12 @@
                         </p>
                     </div>
                 </div>
-                <div class="animateUp w-full p-8 hover:!scale-[1.01] hover:border-opacity-0 hover:shadow-[2px_2px_12px_-2px_#fff] border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden block md:flex justify-center items-center">
+                <div class="animateUp w-full p-8 hoverBoxesShadow border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden block md:flex justify-center items-center">
                     <div class="w-full md:w-4/12 mb-4 md:mb-0">
                         <img src="assets/images/bookino.jpg" class="rounded w-full" alt="#">
                     </div>
-                    <div class="w-full md:w-8/12 flex justify-center flex-col gap-4 py-2 px-4 text-center md:text-start" dir="rtl">
+                    <div class="w-full md:w-8/12 flex justify-center flex-col gap-4 py-2 px-4 text-center md:text-start"
+                            dir="rtl">
                         <h4 class="text-[1.4rem]"> فروشگاه آنلاین کتاب بوکینو </h4>
                         <h6> طراحی صفر تا صد و کاملا انعطاف پذیر، برگزیده مقام کشوری مسابقات طراحی وب </h6>
                         <p>
@@ -190,17 +193,205 @@
                 </div>
             </div>
         </div>
-        <div id="honorContainer" class="">
-            <div class="bg-outline-gray f-morabba mb-3 p-3 text-center rounded-3 fs-4 animateUp">
-                افتخارات
+        <div id="honorContainer" class="text-white">
+            <div class="animateUp text-lg md:text-2xl mb-12 py-5 text-center border border-[#aaa] shadow-none text-white hover:text-white hoverBoxesTranslate font-morabba ">
+                افتخارات و تحصیلات
             </div>
-            <div class="eduContainer__content row g-2">
-                <div class="col-12 col-md-6 p-3">
-                    <div class="mt-4 d-block p-4 f-iranSans animateUp bg-outline-gray rounded rounded-3 box-scaling-mun"
-                         dir="rtl">
-                        <div class="text-center mb-5">تسلط به زبان سمت سرور php</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="animateUp w-full p-8 hoverBoxesShadow border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden block md:flex justify-center items-center">
+                    <div class="w-full flex justify-center flex-col gap-4 py-2 px-4 text-center" dir="rtl">
+                        <h4 class="text-[1.4rem]"> فروشگاه آنلاین کتاب بوکینو </h4>
+                        <h6> طراحی صفر تا صد و کاملا انعطاف پذیر، برگزیده مقام کشوری مسابقات طراحی وب </h6>
+                        <p>
+                            <a href="#" class="text-[14px] underline">اطلاعات بیشتر</a>
+                        </p>
                     </div>
                 </div>
+                <div class="animateUp w-full p-8 hoverBoxesShadow border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden block md:flex justify-center items-center">
+                    <div class="w-full flex justify-center flex-col gap-4 py-2 px-4 text-center" dir="rtl">
+                        <h4 class="text-[1.4rem]"> فروشگاه آنلاین کتاب بوکینو </h4>
+                        <h6> طراحی صفر تا صد و کاملا انعطاف پذیر، برگزیده مقام کشوری مسابقات طراحی وب </h6>
+                        <p>
+                            <a href="#" class="text-[14px] underline">اطلاعات بیشتر</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="animateUp w-full p-8 hoverBoxesShadow border border-gray-400 rounded-xl font-iranSans text-base md:text-lg relative overflow-hidden block md:flex justify-center items-center">
+                    <div class="w-full flex justify-center flex-col gap-4 py-2 px-4 text-center" dir="rtl">
+                        <h4 class="text-[1.4rem]"> فروشگاه آنلاین کتاب بوکینو </h4>
+                        <h6> طراحی صفر تا صد و کاملا انعطاف پذیر، برگزیده مقام کشوری مسابقات طراحی وب </h6>
+                        <p>
+                            <a href="#" class="text-[14px] underline">اطلاعات بیشتر</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="contactContainer" class="text-white">
+            <div class="animateUp text-lg md:text-2xl mb-12 py-5 text-center border border-[#aaa] shadow-none text-white hoverBoxesTranslate font-morabba ">
+                ارتباط با من
+            </div>
+            <div class="grid grid-cols-1 gap-y-16">
+                <div class="animateUp hoverBoxesShadow rounded-lg">
+                    <form class="text-neutral-800 py-6 relative overflow-hidden flex flex-col justify-around w-full border border-neutral-500 rounded-lg p-3 px-10"
+                            dir="rtl">
+                        <div class="space-y-4 before:absolute before:w-32 before:h-20 before:right-2 before:bg-rose-300 before:-z-10 before:rounded-full before:blur-xl before:-top-12 z-10 after:absolute after:w-24 after:h-24 after:bg-purple-300 after:-z-10 after:rounded-full after:blur after:-top-12 after:-right-6">
+                            <span class="font-extrabold text-2xl text-violet-600 font-morabba"> یک روش راحت ! ...</span>
+                            <p class="text-white text-sm md:text-base font-shabnam leading-7">
+                                موضوع سوال/درخواست تونو انتخاب کنید و متن پیامتونو بنویسید و روی دکمه ارسال کلیک کنید
+                                <br> پاسخ به ایمیلتون ارسال میشه👍
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-y-3 sm:gap-x-3 mt-4">
+                            <div class="w-full relative rounded-lg overflow-hidden before:absolute before:w-12 before:h-12 before:content[''] before:right-0 before:bg-violet-500 before:rounded-full before:blur-lg after:absolute after:z-10 after:w-20 after:h-20 after:content[''] after:bg-rose-300 after:right-12 after:top-3 after:rounded-full after:blur-lg">
+                                <input
+                                        type="text"
+                                        class="relative bg-transparent ring-0 outline-none border border-neutral-500 text-neutral-900 placeholder-white text-sm rounded-lg focus:ring-violet-500 placeholder-opacity-60 focus:border-violet-500 block w-full p-2.5 checked:bg-emerald-500"
+                                        placeholder="ایمیل شما"
+                                />
+                            </div>
+                            <div class="w-full relative rounded-lg overflow-hidden before:absolute before:w-12 before:h-12 before:content[''] before:right-0 before:bg-violet-500 before:rounded-full before:blur-lg after:absolute after:z-10 after:w-20 after:h-20 after:content[''] after:bg-rose-300 after:right-12 after:top-3 after:rounded-full after:blur-lg">
+                                <input
+                                        type="text"
+                                        class="relative bg-transparent ring-0 outline-none border border-neutral-500 text-neutral-900 placeholder-white text-sm rounded-lg focus:ring-violet-500 placeholder-opacity-60 focus:border-violet-500 block w-full p-2.5 checked:bg-emerald-500"
+                                        placeholder="متن درخواست/سوال"
+                                />
+                            </div>
+                            <div class="w-full relative group rounded-lg overflow-hidden before:absolute before:w-12 before:h-12 before:content[''] before:right-0 before:bg-violet-500 before:rounded-full before:blur-lg before:[box-shadow:-60px_20px_10px_10px_#F9B0B9]">
+                                <svg
+                                        y="0"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        x="0"
+                                        width="100"
+                                        viewBox="0 0 100 100"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        height="100"
+                                        class="w-8 h-8 absolute left-0 -rotate-45 stroke-pink-300 top-1.5 group-hover:rotate-0 duration-300"
+                                >
+                                    <path
+                                            stroke-width="4"
+                                            stroke-linejoin="round"
+                                            stroke-linecap="round"
+                                            fill="none"
+                                            d="M60.7,53.6,50,64.3m0,0L39.3,53.6M50,64.3V35.7m0,46.4A32.1,32.1,0,1,1,82.1,50,32.1,32.1,0,0,1,50,82.1Z"
+                                            class="svg-stroke-primary"
+                                    ></path>
+                                </svg>
+                                <select class="appearance-none hover:placeholder-shown:bg-emerald-500 relative text-violet-300 bg-transparent ring-0 outline-none border border-neutral-500 placeholder-violet-700 text-sm font-bold rounded-lg focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5">
+                                    <option disabled selected>انتخاب کنید...</option>
+                                    <option>React</option>
+                                    <option>Vue</option>
+                                    <option>Angular</option>
+                                    <option>Svelte</option>
+                                </select>
+                            </div>
+                            <button class="w-1/3 sm:w-1/2 bg-violet-500 text-neutral-50 p-2 rounded-lg hover:bg-violet-400">
+                                ارسال
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <p class="animateUp text-xl text-gray-500 w-full text-center">یا</p>
+                <div class="animateUp hoverBoxesShadow rounded-lg">
+                    <div class="text-neutral-800 py-6 relative overflow-hidden flex flex-col justify-around w-full border border-neutral-500 rounded-lg p-3 px-10" dir="rtl">
+                        <div class="space-y-4 before:absolute before:w-32 before:h-20 before:right-2 before:bg-rose-300 before:-z-10 before:rounded-full before:blur-xl before:-top-12 z-10 after:absolute after:w-24 after:h-24 after:bg-purple-300 after:-z-10 after:rounded-full after:blur after:-top-12 after:-right-6">
+                            <span class="font-extrabold text-2xl text-violet-600 font-morabba"> فیل*ترشکنت روشنه ؟ ...</span>
+                            <p class="text-white text-sm md:text-base font-shabnam leading-7">
+                                از طریق فضای مجازی ارتباط بگیر 😉
+                            </p>
+                        </div>
+                        <div class="mt-6 flex flex-wrap gap-6" dir="ltr">
+                            <button class="group w-12 hover:w-44 h-12 hover:bg-sky-700 relative bg-sky-800 rounded text-neutral-50 duration-700 before:duration-700 before:hover:500 font-bold flex justify-start gap-2 items-center p-2 pr-6 before:absolute before:-z-10 before:left-8 before:hover:left-[calc(100%-12px)] before:w-6 before:h-6 before:bg-sky-800 before:hover:bg-sky-700 before:rotate-45">
+                                <svg
+                                        y="0"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        x="0"
+                                        width="100"
+                                        viewBox="0 0 100 100"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        height="100"
+                                        class="w-8 h-8 shrink-0 fill-neutral-50"
+                                >
+                                    <path
+                                            d="M92.86,0H7.12A7.17,7.17,0,0,0,0,7.21V92.79A7.17,7.17,0,0,0,7.12,100H92.86A7.19,7.19,0,0,0,100,92.79V7.21A7.19,7.19,0,0,0,92.86,0ZM30.22,85.71H15.4V38H30.25V85.71ZM22.81,31.47a8.59,8.59,0,1,1,8.6-8.59A8.6,8.6,0,0,1,22.81,31.47Zm63,54.24H71V62.5c0-5.54-.11-12.66-7.7-12.66s-8.91,6-8.91,12.26V85.71H39.53V38H53.75v6.52H54c2-3.75,6.83-7.7,14-7.7,15,0,17.79,9.89,17.79,22.74Z"
+                                    ></path>
+                                </svg>
+                                <span class="origin-left inline-flex duration-100 group-hover:duration-300 group-hover:delay-500 opacity-0 group-hover:opacity-100 border-l-2 px-1 transform scale-x-0 group-hover:scale-x-100 transition-all">Your Name</span>
+                            </button>
+                            <button class="group w-12 hover:w-44 h-12 hover:bg-sky-500 relative bg-sky-600 rounded text-neutral-50 duration-700 before:duration-700 before:hover:500 font-bold flex justify-start gap-2 items-center p-2 pr-6 before:absolute before:-z-10 before:left-8 before:hover:left-[calc(100%-12px)] before:w-6 before:h-6 before:bg-sky-600 before:hover:bg-sky-500 before:rotate-45">
+                                <svg
+                                        y="0"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        x="0"
+                                        width="100"
+                                        viewBox="0 0 20 20"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        height="100"
+                                        class="w-8 h-8 shrink-0 fill-neutral-50">
+                                    <path d="M10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z M14.4415206,6 C14.060553,6.00676048 13.476055,6.20741135 10.663148,7.36249773 C9.67796175,7.7670526 7.70897661,8.60437935 4.75619264,9.87447795 C4.27670659,10.0627254 4.02553067,10.2468857 4.00266485,10.4269588 C3.95876487,10.7726802 4.46291296,10.8803081 5.09723696,11.0838761 C5.61440201,11.2498453 6.31007997,11.4440124 6.67173438,11.4517262 C6.99978943,11.4587234 7.36593635,11.3251987 7.77017511,11.051152 C10.5290529,9.21254679 11.9531977,8.28322679 12.0426094,8.26319203 C12.1056879,8.24905787 12.1930992,8.23128593 12.2523244,8.28325656 C12.3115496,8.33522719 12.3057275,8.43364956 12.299454,8.46005377 C12.2492926,8.67117474 9.65764825,10.998457 9.50849738,11.1513987 L9.43697409,11.2233057 C8.88741493,11.7661123 8.33196049,12.1205055 9.290333,12.7440164 C10.155665,13.3069957 10.6592923,13.6661378 11.5507686,14.2430701 C12.1204738,14.6117635 12.5671299,15.0489784 13.1553348,14.9955401 C13.4259939,14.9709508 13.705567,14.7196888 13.8475521,13.9703127 C14.1831052,12.1993135 14.8426779,8.36209709 14.9951103,6.78087197 C15.0084653,6.64233621 14.9916649,6.46503787 14.9781732,6.38720805 C14.9646815,6.30937823 14.9364876,6.19848702 14.8340164,6.11639754 C14.7126597,6.01917896 14.5253109,5.99867765 14.4415206,6 Z"/>
+                                </svg>
+                                <span class="origin-left inline-flex duration-100 group-hover:duration-300 group-hover:delay-500 opacity-0 group-hover:opacity-100 border-l-2 px-1 transform scale-x-0 group-hover:scale-x-100 transition-all">Your Name</span>
+                            </button>
+                            <button class="group w-12 hover:w-44 h-12 hover:bg-green-500 relative bg-green-600 rounded text-neutral-50 duration-700 before:duration-700 before:hover:500 font-bold flex justify-start gap-2 items-center p-2 pr-6 before:absolute before:-z-10 before:left-8 before:hover:left-[calc(100%-12px)] before:w-6 before:h-6 before:bg-green-600 before:hover:bg-green-500 before:rotate-45">
+                                <svg
+                                        y="0"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        x="0"
+                                        width="100"
+                                        viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        height="100"
+                                        class="w-8 h-8 shrink-0 fill-neutral-50">
+                                    <path d="M22,6.55a12.61,12.61,0,0,0-.1-1.29,4.29,4.29,0,0,0-.37-1.08,3.66,3.66,0,0,0-.71-1,3.91,3.91,0,0,0-1-.71,4.28,4.28,0,0,0-1.08-.36A10.21,10.21,0,0,0,17.46,2H6.55a12.61,12.61,0,0,0-1.29.1,4.29,4.29,0,0,0-1.08.37,3.66,3.66,0,0,0-1,.71,3.91,3.91,0,0,0-.71,1,4.28,4.28,0,0,0-.36,1.08A10.21,10.21,0,0,0,2,6.54C2,6.73,2,7,2,7.08v9.84c0,.11,0,.35,0,.53a12.61,12.61,0,0,0,.1,1.29,4.29,4.29,0,0,0,.37,1.08,3.66,3.66,0,0,0,.71,1,3.91,3.91,0,0,0,1,.71,4.28,4.28,0,0,0,1.08.36A10.21,10.21,0,0,0,6.54,22H17.45a12.61,12.61,0,0,0,1.29-.1,4.29,4.29,0,0,0,1.08-.37,3.66,3.66,0,0,0,1-.71,3.91,3.91,0,0,0,.71-1,4.28,4.28,0,0,0,.36-1.08A10.21,10.21,0,0,0,22,17.46c0-.19,0-.43,0-.54V7.08C22,7,22,6.73,22,6.55ZM12.23,19h0A7.12,7.12,0,0,1,8.8,18.1L5,19.1l1-3.72a7.11,7.11,0,0,1-1-3.58A7.18,7.18,0,1,1,12.23,19Zm0-13.13A6,6,0,0,0,7.18,15l.14.23-.6,2.19L9,16.8l.22.13a6,6,0,0,0,3,.83h0a6,6,0,0,0,6-6,6,6,0,0,0-6-6Zm3.5,8.52a1.82,1.82,0,0,1-1.21.85,2.33,2.33,0,0,1-1.12-.07,8.9,8.9,0,0,1-1-.38,8,8,0,0,1-3.06-2.7,3.48,3.48,0,0,1-.73-1.85,2,2,0,0,1,.63-1.5.65.65,0,0,1,.48-.22H10c.11,0,.26,0,.4.31s.51,1.24.56,1.33a.34.34,0,0,1,0,.31,1.14,1.14,0,0,1-.18.3c-.09.11-.19.24-.27.32s-.18.18-.08.36a5.56,5.56,0,0,0,1,1.24,5,5,0,0,0,1.44.89c.18.09.29.08.39,0s.45-.52.57-.7.24-.15.4-.09,1.05.49,1.23.58.29.13.34.21A1.56,1.56,0,0,1,15.73,14.36Z"/>
+                                </svg>
+                                <span class="origin-left inline-flex duration-100 group-hover:duration-300 group-hover:delay-500 opacity-0 group-hover:opacity-100 border-l-2 px-1 transform scale-x-0 group-hover:scale-x-100 transition-all">Your Name</span>
+                            </button>
+                            <button class="group w-12 hover:w-44 h-12 hover:bg-sky-600 bg-gradient-to-tr from-[#ffd600] from-15% via-[#ff0069] via-35% to-[#7638fa] to-80% before:bg-gradient-to-tr before:from-[#ffd600] before:from-15% before:via-[#ff0069] before:via-35% before:to-[#7638fa] before:to-80% relative  rounded text-neutral-50 duration-700 before:duration-700 before:hover:500 font-bold flex justify-start gap-2 items-center p-2 pr-6 before:absolute before:-z-10 before:left-8 before:hover:left-[calc(100%-12px)] before:w-6 before:h-6 before:hover:bg-sky-600 before:rotate-45">
+                                <svg
+                                        y="0"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        x="0"
+                                        width="100"
+                                        viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        height="100"
+                                        class="w-8 h-8 shrink-0 fill-neutral-50"
+                                >
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#fff"/>
+                                    <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#fff"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#fff"/>
+                                </svg>
+                                <span class="origin-left inline-flex duration-100 group-hover:duration-300 group-hover:delay-500 opacity-0 group-hover:opacity-100 border-l-2 px-1 transform scale-x-0 group-hover:scale-x-100 transition-all">Your Name</span>
+                            </button>
+                            <button class="group w-12 hover:w-44 h-12 bg-black relative rounded text-neutral-50 duration-700 before:duration-700 before:hover:500 font-bold flex justify-start gap-2 items-center p-2 pr-6 before:absolute before:-z-10 before:left-8 before:hover:left-[calc(100%-12px)] before:w-6 before:h-6 before:bg-black before:rotate-45">
+                                <svg
+                                        y="0"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        x="0"
+                                        width="100"
+                                        viewBox="0 0 73 73"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        height="100"
+                                        class="w-8 h-8 shrink-0 fill-neutral-50"
+                                >
+                                    <g id="team-collaboration/version-control/github" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="container" transform="translate(2.000000, 2.000000)" fill-rule="nonzero">
+                                            <rect id="mask" stroke="#000000" stroke-width="2" fill="#000000" x="-1" y="-1" width="71" height="71" rx="14">
+
+                                            </rect>
+                                            <path d="M58.3067362,21.4281798 C55.895743,17.2972267 52.6253846,14.0267453 48.4948004,11.615998 C44.3636013,9.20512774 39.8535636,8 34.9614901,8 C30.0700314,8 25.5585181,9.20549662 21.4281798,11.615998 C17.2972267,14.0266224 14.0269912,17.2972267 11.615998,21.4281798 C9.20537366,25.5590099 8,30.0699084 8,34.9607523 C8,40.8357654 9.71405782,46.1187277 13.1430342,50.8109917 C16.5716416,55.5036246 21.0008949,58.7507436 26.4304251,60.5527176 C27.0624378,60.6700211 27.5302994,60.5875152 27.8345016,60.3072901 C28.1388268,60.0266961 28.290805,59.6752774 28.290805,59.2545094 C28.290805,59.1842994 28.2847799,58.5526556 28.2730988,57.3588401 C28.2610487,56.1650247 28.2553926,55.1235563 28.2553926,54.2349267 L27.4479164,54.3746089 C26.9330843,54.468919 26.2836113,54.5088809 25.4994975,54.4975686 C24.7157525,54.4866252 23.9021284,54.4044881 23.0597317,54.2517722 C22.2169661,54.1004088 21.4330982,53.749359 20.7075131,53.1993604 C19.982297,52.6493618 19.4674649,51.9294329 19.1631397,51.0406804 L18.8120898,50.2328353 C18.5780976,49.6950097 18.2097104,49.0975487 17.7064365,48.4426655 C17.2031625,47.7871675 16.6942324,47.3427912 16.1794003,47.108799 L15.9336039,46.9328437 C15.7698216,46.815909 15.6178435,46.6748743 15.4773006,46.511215 C15.3368806,46.3475556 15.2317501,46.1837734 15.1615401,46.0197452 C15.0912072,45.855594 15.1494901,45.7209532 15.3370036,45.6153308 C15.5245171,45.5097084 15.8633939,45.4584343 16.3551097,45.4584343 L17.0569635,45.5633189 C17.5250709,45.6571371 18.104088,45.9373622 18.7947525,46.4057156 C19.4850481,46.8737001 20.052507,47.4821045 20.4972521,48.230683 C21.0358155,49.1905062 21.6846737,49.9218703 22.4456711,50.4251443 C23.2060537,50.9284182 23.9727072,51.1796248 24.744894,51.1796248 C25.5170807,51.1796248 26.1840139,51.121096 26.7459396,51.0046532 C27.3072505,50.8875956 27.8338868,50.7116403 28.3256025,50.477771 C28.5362325,48.9090515 29.1097164,47.7039238 30.0455624,46.8615271 C28.7116959,46.721353 27.5124702,46.5102313 26.4472706,46.2295144 C25.3826858,45.9484285 24.2825656,45.4922482 23.1476478,44.8597436 C22.0121153,44.2280998 21.0701212,43.44374 20.3214198,42.5080169 C19.5725954,41.571802 18.9580429,40.3426971 18.4786232,38.821809 C17.9989575,37.300306 17.7590632,35.5451796 17.7590632,33.5559381 C17.7590632,30.7235621 18.6837199,28.3133066 20.5326645,26.3238191 C19.6665366,24.1944035 19.7483048,21.8072644 20.778215,19.1626478 C21.4569523,18.951772 22.4635002,19.1100211 23.7973667,19.6364115 C25.1314792,20.1630477 26.1082708,20.6141868 26.7287253,20.9882301 C27.3491798,21.3621504 27.8463057,21.6790175 28.2208409,21.9360032 C30.3978419,21.3277217 32.644438,21.0235195 34.9612442,21.0235195 C37.2780503,21.0235195 39.5251383,21.3277217 41.7022622,21.9360032 L43.0362517,21.0938524 C43.9484895,20.5319267 45.0257392,20.0169716 46.2654186,19.5488642 C47.5058357,19.0810026 48.4543466,18.9521409 49.1099676,19.1630167 C50.1627483,21.8077563 50.2565666,24.1947724 49.3901927,26.324188 C51.2390143,28.3136755 52.1640399,30.7245457 52.1640399,33.556307 C52.1640399,35.5455485 51.9232849,37.3062081 51.444357,38.8393922 C50.9648143,40.3728223 50.3449746,41.6006975 49.5845919,42.5256002 C48.8233486,43.4503799 47.8753296,44.2285916 46.7404118,44.8601125 C45.6052481,45.4921252 44.504759,45.9483056 43.4401742,46.2293914 C42.3750975,46.5104772 41.1758719,46.7217219 39.8420054,46.8621419 C41.0585683,47.9149226 41.6669728,49.5767225 41.6669728,51.846804 L41.6669728,59.2535257 C41.6669728,59.6742937 41.8132948,60.0255895 42.1061847,60.3063064 C42.3987058,60.5865315 42.8606653,60.6690374 43.492678,60.5516109 C48.922946,58.7498829 53.3521992,55.5026409 56.7806837,50.810008 C60.2087994,46.117744 61.923472,40.8347817 61.923472,34.9597686 C61.9222424,30.0695396 60.7162539,25.5590099 58.3067362,21.4281798 Z" id="Shape" fill="#FFFFFF">
+
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="origin-left inline-flex duration-100 group-hover:duration-300 group-hover:delay-500 opacity-0 group-hover:opacity-100 border-l-2 px-1 transform scale-x-0 group-hover:scale-x-100 transition-all">Your Name</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p class="animateUp text-xl text-gray-500 w-full text-center">یا</p>
             </div>
         </div>
     </article>
