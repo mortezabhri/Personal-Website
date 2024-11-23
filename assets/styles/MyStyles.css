@@ -164,9 +164,9 @@ html {
     z-index: 901;
 }
 
-.profileSection {
-    transform: translateX(150px);
-}
+/*.profileSection {*/
+/*    transform: translateX(150px);*/
+/*}*/
 
 .profileSection .imageContainer {
     display: grid;

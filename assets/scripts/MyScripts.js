@@ -47,6 +47,7 @@ $(document).ready(() => {
     }
 
     //profile
+    /*
     $(".profileSection").click(() => {
         if ($(".bg-filter").css("display") == "none") {
             $(".bg-filter").fadeIn(500);
@@ -93,8 +94,34 @@ $(document).ready(() => {
             }, 200)
         }
     })
+    */
     $("#bio").click(() => {
-        $(".profileSection").click()
+        $(".bg-filter").css({
+            display: "block"
+        })
+        setTimeout(()=>{
+            $(".bg-filter").css({
+                opacity: 1
+            })
+        } , 100)
+        $("#profile").css({
+            transform : "scale(1)",
+            opacity: 1
+        })
+    })
+    $(".bg-filter").on("click", function () {
+        $(".bg-filter").css({
+            opacity: 0
+        })
+        setTimeout(()=>{
+            $(".bg-filter").css({
+                display: "none"
+            })
+        } , 500)
+        $("#profile").css({
+            transform : "scale(0.7)",
+            opacity: 0
+        })
     })
 
     /* ----- WINDOWS ACTIONS ----- */
@@ -137,10 +164,10 @@ $(document).ready(() => {
         // indicator
         if (window.scrollY > scrollShowButtons) {
             $("#indicator").css("transform", "translateX(0)")
-            $(".profileSection").css("transform", "translateX(0)")
+            // $(".profileSection").css("transform", "translateX(0)")
         } else {
             $("#indicator").css("transform", "translateX(20px)")
-            $(".profileSection").css("transform", "translateX(150px)")
+            // $(".profileSection").css("transform", "translateX(150px)")
         }
         const winScroll = window.scrollY - 1000;
         const height = document.documentElement.scrollHeight - window.innerHeight - 1000;
