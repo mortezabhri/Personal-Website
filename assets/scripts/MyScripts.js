@@ -210,13 +210,40 @@ $(document).ready(() => {
 
     })
 
+    let cr = new SplitType("#cr-mb");
+    gsap.to(".word:nth-child(3)", {
+        scrollTrigger: {
+            trigger: ".word:nth-child(3)",
+            start: "top bottom",
+            toggleActions: "play none none reverse"
+        },
+        opacity: 1,
+        duration: 1.2,
+        delay: 1.5,
+        transform: "rotateX(0)"
+    })
+    gsap.to(".char", {
+        scrollTrigger: {
+            trigger: ".char",
+            start: "top bottom",
+            toggleActions: "play none none reverse"
+        },
+        opacity: 1,
+        duration: .8,
+        y: 0,
+        x: 0,
+        rotate: 0,
+        stagger: .1,
+        ease: "back.out(1.4)"
+    })
+
+
     //GSAP Codes
     //animate up for all selectors
-
     const countAnimateUp = document.querySelectorAll(".animateUp");
     let status = {
-        "status" : false,
-        "elementID" : 0
+        "status": false,
+        "elementID": 0
     };
     for (let i = 0; i < countAnimateUp.length; i++) {
         gsap.fromTo(countAnimateUp[i],
@@ -237,10 +264,10 @@ $(document).ready(() => {
                 y: 0,
                 opacity: 1,
                 onReverseComplete: function () {
-                    $(countAnimateUp[i]).css("transition" , "none")
+                    $(countAnimateUp[i]).css("transition", "none")
                 },
                 onComplete: function () {
-                    $(countAnimateUp[i]).css("transition" , "all 0.2s ease")
+                    $(countAnimateUp[i]).css("transition", "all 0.2s ease")
                 }
             });
     }

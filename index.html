@@ -7,10 +7,9 @@
     <title>رزومه من ( بتا)</title>
     <link rel="stylesheet" href="assets/styles/MyStyles.css">
     <link rel="stylesheet" href="assets/tailwindcss/main.css">
-
 </head>
 
-<body class="bg-bgColor relative top-0 mb-28">
+<body class="bg-bgColor relative top-0 mb-0">
 <!-- LOADER -->
 <section id="loaderSec"
         class="w-screen h-screen flex justify-center items-center z-100 fixed bg-[#00000073] backdrop-blur-[8px]">
@@ -391,18 +390,22 @@
                         </div>
                     </div>
                 </div>
-                <p class="animateUp text-xl text-gray-500 w-full text-center">یا</p>
+            </div>
+        </div>
+        <div id="footerContainer" class="text-white w-full h-[100vh] pointer-events-none flex justify-center items-center">
+            <div>
+                <h1 id="cr-mb" class="text-4xl md:text-6xl font-corbel">Created By MBahri</h1>
             </div>
         </div>
     </article>
 </section>
-
 
 <!-- scripts -->
 <script src="assets/jquery/jquery-3.7.1.min.js"></script>
 <script src="assets/Gsap/gsap.min.js"></script>
 <script src="assets/Gsap/gsapScrollTrigger.js"></script>
 <script src="assets/scripts/MyScripts.js"></script>
+<script src="assets/splitType/spliteType.js"></script>
 <script>
     function scrollToViewMun(elm) {
         $(window).scrollTop($(elm).offset().top - 150)
